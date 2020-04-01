@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@import '~bulma/bulma';
+@import '~@mdi/font/css/materialdesignicons.min.css';
+
+.pointer {
+  cursor: pointer;
+}
+
+@for $i from 1 through 4  {
+  .margin-top-#{$i * 5} {
+    margin-top: 1px * ($i * 5);
+  }
+}
